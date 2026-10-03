@@ -1,4 +1,4 @@
-# Zomato Restaurant & Customer Analytics
+# Restaurant Performance Analytics 📊🍽️
 
 An end-to-end data analytics project exploring customer preferences, restaurant popularity, pricing patterns, and online-ordering behavior using the Zomato dataset. This project bridges raw data engineering, exploratory data analysis (EDA), database querying, statistical analysis, and interactive dashboarding to drive actionable business insights.
 
