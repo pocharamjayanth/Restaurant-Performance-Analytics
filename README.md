@@ -121,7 +121,12 @@ The analysis is designed around the Zomato restaurant dataset for Bengaluru. The
 
 ### Power BI
 
-`powerbi/zomato data.pbix` is a single-page dashboard built on the cleaned table. It includes a headline KPI card, a donut chart showing the online-order split, a combo chart of restaurants by listed type and a detailed restaurant table (cost, rating, votes, cuisine, location, restaurant type and ordering options).
+`powerbi/zomato data.pbix` is a single-page dashboard built on the 10-restaurant sample table. It contains four visuals:
+
+- **Restaurant card:** a card listing restaurant names.
+- **Online-order donut chart:** restaurant count by online-order status (6 of 10 offer online ordering, 4 do not).
+- **Restaurants by listed type:** a column chart of restaurant counts (Cafes 3; Buffet, Delivery and Dine-out 2 each; Pubs and bars 1).
+- **Restaurant detail table:** cost, rating, name, listed type, table booking, cuisines, location and online ordering for every restaurant.
 
 ## Key Findings
 
