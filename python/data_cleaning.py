@@ -6,7 +6,7 @@ import os
 if os.path.exists("zomato.csv"):
     df = pd.read_csv("zomato.csv")
 else:
-    raise FileNotFoundError("zomato.csv is not found in the root Zomato-Data-Analytics folder. Please place it there.")
+    raise FileNotFoundError("zomato.csv is not found in the root restaurant-performance-Analytics folder. Please place it there.")
 
 print(f"Original Dataset Shape: {df.shape}")
 
