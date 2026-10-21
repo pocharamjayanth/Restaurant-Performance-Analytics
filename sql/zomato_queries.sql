@@ -1,13 +1,11 @@
-﻿-- Query 1: Top Highest Rated Restaurants
-SELECT name, rate, "approx_cost(for two people)" AS cost
-FROM zomato
-ORDER BY rate DESC
-LIMIT 5;
-
--- Query 2: Average Cost and Rating by Restaurant Type
+-- Analyze top-performing cuisines by average rating and dining cost
 SELECT 
-    "listed_in(type)" AS restaurant_type,
-    AVG(rate) AS avg_rating,
-    AVG("approx_cost(for two people)") AS avg_cost
-FROM zomato
-GROUP BY "listed_in(type)";
+    cuisine,
+    COUNT(restaurant_id) AS total_restaurants,
+    ROUND(AVG(rating), 2) AS average_rating,
+    ROUND(AVG(average_cost_for_two), 2) AS avg_cost_for_two
+FROM restaurants
+GROUP BY cuisine
+HAVING COUNT(restaurant_id) >= 5
+ORDER BY average_rating DESC, total_restaurants DESC
+LIMIT 10;
